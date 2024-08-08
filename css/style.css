@@ -1,0 +1,804 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header { 
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1.left a { 
+    display: inline-flex;
+    align-items: center;
+    color: #1e293b;
+}
+
+header nav.right ul { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav.right ul li { 
+    margin-left: 20px;
+}
+
+header nav.right ul li a.btn1 { 
+    border: 1px solid #1e293b;
+    color: #1e293b;
+    padding: 12px;
+    cursor: pointer;
+}
+
+header nav.right ul li a.btn2 { 
+    background-color: #1e293b;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+#spotlight { 
+    border-top: 1px solid #e8e8e9;
+}
+
+#spotlight section.container { 
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#spotlight section.container div.content { 
+    margin-top: 120px;
+}
+
+#spotlight section.container div.content h1 { 
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#spotlight section.container div.content p { 
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    color: #1e293b;
+}
+
+#spotlight section.container div.content a button { 
+    border: none;
+    background-color: #0066ff;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#spotlight section.container div.img-container { 
+    margin-right: 120px;
+}
+
+#spotlight section.container div.img-container img { 
+    width: 600px;
+}
+
+#home section.bottom { 
+    margin-top: 80px;
+    background-color: #f5f8fc;
+}
+
+#home section.bottom ul { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px;
+}
+
+#home section.bottom ul li { 
+    border-right: 4px solid #eeeff1;  
+    margin: 0 auto;
+    width: 100%;
+}
+
+#home section.bottom ul li:last-child {
+    border-right: 0;
+}
+
+#home section.bottom ul li h4 { 
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#home section.bottom ul li p { 
+    font-size: 15px;
+    color: #424547;
+}
+
+#categories { 
+    margin-top: 60px;
+}
+
+#categories div.top { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#categories div.top h2 { 
+    font-size: 28px;
+}
+
+#categories div.top a { 
+    color: #0066ff;
+    font-size: 15px;
+}
+
+#categories div.items ul { 
+    display: flex;
+    justify-content: space-around;
+}
+
+#categories div.items ul li { 
+    box-shadow: 0 0 2px 2px rgba(107, 106, 106, 0.1);
+    border-radius: 15px;
+    width: 340px;
+    height: 220px;
+    margin-right: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+#categories div.items ul li a img { 
+    width: 100px;
+    height: 100px;
+    background: #dfeffd;
+    padding: 0 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#categories div.items ul li a h3 { 
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#categories div.items ul li a p { 
+    color: #5f6061;
+}
+
+#courses { 
+    margin-top: 60px;
+}
+
+#courses div.top { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#courses div.top h2 { 
+    font-size: 28px;
+}
+
+#courses div.top a { 
+    color: #0066ff;
+    font-size: 15px;
+}
+
+#courses div.items ul { 
+    display: flex;
+    justify-content: space-between;
+}
+
+#courses div.items ul li { 
+    box-shadow: 0 0 2px 2px rgba(107, 106, 106, 0.1);
+    border-radius: 15px;
+    /* width: 340px;
+    height: 370px; */
+    margin-right: 15px;
+    padding: 20px;
+}
+
+#courses div.items ul li img.bg { 
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#courses div.items ul li h3 { 
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#courses div.items ul li h6 { 
+    font-size: 15px;
+    color: #1e293b;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#courses div.items ul li span.rating span { 
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+#courses div.items ul li p { 
+    margin: 15px 0;
+    font-size: 15px;
+    color: #1e293b;
+}
+
+#courses div.items ul li h5 { 
+    font-size: 23px;
+}
+
+#instructors { 
+    margin-top: 60px;
+}
+
+#instructors div.top { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#instructors div.top h2 { 
+    font-size: 28px;
+}
+
+#instructors div.top a { 
+    color: #0066ff;
+    font-size: 15px;
+}
+
+#instructors div.items ul { 
+    display: flex;
+    justify-content: space-around;
+}
+
+#instructors div.items ul li { 
+    box-shadow: 0 0 2px 2px rgba(107, 106, 106, 0.1);
+    border-radius: 15px;
+    /* width: 280px;
+    height: 340px; */
+    margin-right: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+#instructors div.items ul li img.model { 
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#instructors div.items ul li h3 { 
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#instructors div.items ul li h5 { 
+    font-size: 16px;
+    color: #515c6b;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e4e7;
+}
+
+#instructors div.items ul li div.bottom { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#instructors div.items ul li div.bottom span { 
+    display: flex;
+    align-items: center;
+}
+
+#instructors div.items ul li div.bottom span h6 { 
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#instructors div.items ul li div.bottom h4 { 
+    font-size: 15px;
+    color: #394555;
+}
+
+#testimonials {
+    margin-top: 60px;
+    background-color: #f7f9fc;
+    padding: 60px 0;
+}
+
+#testimonials div.top { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#testimonials div.top h2 { 
+    font-size: 30px;
+}
+
+#testimonials div.top span.arrow img.one { 
+    background-color: #93a4bd;
+    padding: 12px 23px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+#testimonials div.top span.arrow img.two { 
+    background-color: #93a4bd;
+    padding: 12px 23px;
+    border-radius: 8px;
+}
+
+#testimonials div.content { 
+    margin-top: 30px;
+}
+
+#testimonials div.content ul { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#testimonials div.content ul li { 
+    background-color: #fff;
+    box-shadow: 0 0 2px 2px rgba(107, 106, 106, 0.1);
+    border-radius: 15px;
+    width: 30%;
+    margin-right: 15px;
+    padding: 20px;
+}
+
+#testimonials div.content ul li img { 
+    margin: 20px 0;
+    width: 32px;
+}
+
+#testimonials div.content ul li p { 
+    color: #1e293b;
+    font-size: 17px;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+#testimonials div.content ul li div.bottom { 
+    display: flex;
+    align-items: center;
+}
+
+#testimonials div.content ul li div.bottom img.span-img { 
+    width: 16%;
+    border-radius: 50%;
+}
+
+#testimonials div.content ul li div.bottom span.text { 
+    margin-left: 10px;
+}
+
+#testimonials div.content ul li div.bottom span.text h3 { 
+    font-size: 18px;
+}
+
+#testimonials div.content ul li div.bottom span.text p { 
+    font-size: 15px;
+    color: #515c6b;
+}
+
+#features { 
+    margin-top: 60px;
+}
+
+#features section.content { 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#features section.content div.content_box { 
+    width: 35%;
+}
+
+#features section.content div.content_box h3 { 
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#features section.content div.content_box p { 
+    font-size: 18px;
+    line-height: 1.6em;
+    color: #1e293b;
+    margin-bottom: 35px;
+}
+
+#features section.content div.content_box .button { 
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#features section.content div.content_box .button img { 
+    margin-left: 10px;
+}
+
+footer { 
+    background-color: #1e293b;
+    padding: 5% 0;
+}
+
+footer section.container { 
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+footer section.container div.left { 
+    width: 30%;
+}
+
+footer section.container div.left h1 { 
+    margin-bottom: 15px;
+}
+
+footer section.container div.left h1 a { 
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+}
+
+footer section.container div.left p { 
+    color: #bcbdc4;
+    line-height: 1.6em;
+}
+
+footer section.container div.right { 
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+footer section.container div.right div.item h3 { 
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer section.container div.right div.item ul li a { 
+    color: #bcbdc4;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+footer section.container div.right div.item span.logos small { 
+    width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+    background: url(../assets/social-media.jpg);
+}
+
+footer section.container div.right div.item span.logos small:nth-child(2){
+    background-position: -65px;
+}
+
+footer section.container div.right div.item span.logos small:nth-child(3){
+    background-position: -128px;
+}
+
+footer section.container div.right div.item span.logos small:nth-child(4){
+    background-position: -192px;
+}
+
+footer section.container div.right div.item span.logos small:nth-child(5){
+    background-position: -256px;
+}
+
+@media all and (max-width: 1200px) {
+    footer section.container div.left { 
+        width: 45%;
+    }
+    footer section.container div.right{
+        width: 100%;
+    }
+}
+
+@media all and (max-width:980px) {
+    #spotlight section.container div.content{
+        margin-top: 100px;
+    }
+    #spotlight section.container div.img-container {
+        margin: 0;
+    }
+    #spotlight section.container div.img-container img {
+        width: 400px;
+    }
+    #spotlight section.container div.content p br {
+        display: none;
+    }
+    #courses div.items ul li span.rating span{
+        display: block;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    #instructors div.items ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #instructors div.items ul li {
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+    #testimonials div.content ul{
+        justify-content: center;
+    }
+    #testimonials div.content ul li {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    #features section.content div.left img{
+        width: 300px;
+    }
+    #features section.content div.right img{
+        width: 350px;
+    }
+    footer section.container div.right {
+        flex-wrap: wrap;
+    }
+    footer section.container div.right div.item{
+        margin-right: 40px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #home section.bottom ul{
+        padding: 20px 40px;
+    }
+    #home section.bottom ul li {
+        margin-right: 20px;
+    }
+    #home section.bottom ul li:last-child {
+        margin-right: 0;
+    }
+    #home section.bottom ul li h4{
+        font-size: 28px;
+    }
+    #home section.bottom ul li p{
+        font-size: 13px;
+    }
+    #categories div.items ul{
+        flex-wrap: wrap;
+    }
+    #categories div.items ul li{
+        margin-bottom: 15px;
+        width: 46%;
+    }
+    #courses div.items ul{
+        flex-wrap: wrap;
+    }
+    #courses div.items ul li{
+        margin-bottom: 20px;
+    }
+    #instructors div.items ul li{
+        width: 28%;
+    }
+    #instructors div.items ul li div.bottom h4{
+        font-size: 13px;
+    }
+    #testimonials div.content ul li{
+        width: 46%;
+    }
+    footer section.container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer section.container div.left{
+        text-align: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    footer section.container div.left p br{
+        display: none;
+    }
+    footer section.container div.right{
+        justify-content: flex-start;
+    }
+    footer section.container div.right div.item {
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 640px) {
+    #spotlight section.container div.content{
+        width: 100%;
+        text-align: center;
+    }
+    #spotlight section.container div.img-container img{
+        display: none;
+    }
+    #courses div.items ul{
+        justify-content: space-around;
+    }
+    #courses div.items ul li{
+        width: 46%;
+    }
+    #instructors div.items ul li {
+        width: 45%;
+    }
+    #testimonials div.content ul li{
+        width: 100%;
+    }
+    #features section.content:first-child{
+        flex-direction: column;
+    }
+    #features section.content:last-child{
+        flex-direction: column-reverse;
+    }
+    #features section.content div.content_box{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+}
+
+@media all and (max-width: 480px) {
+    #spotlight section.container div.content h1{
+        font-size: 32px;
+    }
+    #spotlight section.container div.content p{
+        font-size: 16px;
+    }
+    #home section.bottom ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #home section.bottom ul li{
+        width: 45%;
+        margin-bottom: 20px;
+        border: none;
+    }
+    #home section.bottom ul li:last-child{
+        margin-right: 20px;
+    }
+    #instructors div.items ul li{
+        width: 44%;
+    }
+    #testimonials div.top h2{
+        font-size: 22px;
+        width: 60%;
+    }
+    #testimonials div.top h2 br{
+        display: none;
+    }
+    #testimonials div.top span.arrow img.one{
+        padding: 6px 15px;
+        margin-right: 8px;
+    }
+    #testimonials div.top span.arrow img.two{
+        padding: 6px 15px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    header h1.left{
+        width: 100%;
+        text-align: center;
+    }
+    header nav.right {
+        display: none;
+    }
+    #spotlight section.container div.content{
+        margin-top: 50px;
+    }
+    #spotlight section.container div.content h1 {
+        font-size: 28px;
+    }
+    #home section.bottom ul li {
+        width: 42%;
+    }
+    #categories div.top h2{
+        font-size: 22px;
+    }
+    #categories div.items ul li{
+        width: 100%;
+    }
+    #courses div.top h2 {
+        font-size: 22px;
+    }
+    #courses div.items ul li{
+        width: 100%;
+    }
+    #instructors div.top h2{
+        font-size: 22px;
+    }
+    #instructors div.items ul li{
+        width: 100%;
+    } 
+}
+
+@media all and (max-width: 320px) {
+    #spotlight section.container div.content h1 {
+        font-size: 25px;
+    }
+    #spotlight section.container div.content p{
+        font-size: 15px;
+    }
+    #home section.bottom ul li{
+        margin-left: 0;
+    }
+    #features section.content div.left img{
+        width: 280px;
+    }
+    #features section.content div.right img{
+        width: 300px;
+    }
+    #features section.content div.content_box h3{
+        font-size: 22px;
+    }
+    #features section.content div.content_box p{
+        font-size: 15px;
+    }
+    footer section.container div.right div.item:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
