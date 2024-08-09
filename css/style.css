@@ -74,14 +74,14 @@ header nav.right ul li a.btn2 {
     margin-top: 120px;
 }
 
-#spotlight section.container div.content h1 { 
+#spotlight section.container div.content h2 { 
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 20px;
 }
 
 #spotlight section.container div.content p { 
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5em;
     margin-bottom: 30px;
     color: #1e293b;
@@ -150,7 +150,7 @@ header nav.right ul li a.btn2 {
 }
 
 #categories div.top h2 { 
-    font-size: 28px;
+    font-size: 24px;
 }
 
 #categories div.top a { 
@@ -160,11 +160,11 @@ header nav.right ul li a.btn2 {
 
 #categories div.items ul { 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #categories div.items ul li { 
-    box-shadow: 0 0 2px 2px rgba(107, 106, 106, 0.1);
+    box-shadow: 0 0 8px 0 #3b82f61f;
     border-radius: 15px;
     width: 340px;
     height: 220px;
@@ -204,7 +204,7 @@ header nav.right ul li a.btn2 {
 }
 
 #courses div.top h2 { 
-    font-size: 28px;
+    font-size: 24px;
 }
 
 #courses div.top a { 
@@ -218,10 +218,8 @@ header nav.right ul li a.btn2 {
 }
 
 #courses div.items ul li { 
-    box-shadow: 0 0 2px 2px rgba(107, 106, 106, 0.1);
+    box-shadow: 0 0 8px 0 #3b82f61f;
     border-radius: 15px;
-    /* width: 340px;
-    height: 370px; */
     margin-right: 15px;
     padding: 20px;
 }
@@ -238,13 +236,17 @@ header nav.right ul li a.btn2 {
 
 #courses div.items ul li h6 { 
     font-size: 15px;
-    color: #1e293b;
+    color: #334155;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
+#courses div.items ul li span.rating{
+    display: flex;
+    align-items: center;
+}
 #courses div.items ul li span.rating span { 
-    margin-left: 10px;
+    margin-left: 12px;
     font-weight: 600;
     font-size: 14px;
     color: #1e293b;
@@ -253,7 +255,7 @@ header nav.right ul li a.btn2 {
 #courses div.items ul li p { 
     margin: 15px 0;
     font-size: 15px;
-    color: #1e293b;
+    color: #334155;
 }
 
 #courses div.items ul li h5 { 
@@ -282,14 +284,12 @@ header nav.right ul li a.btn2 {
 
 #instructors div.items ul { 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #instructors div.items ul li { 
     box-shadow: 0 0 2px 2px rgba(107, 106, 106, 0.1);
     border-radius: 15px;
-    /* width: 280px;
-    height: 340px; */
     margin-right: 15px;
     padding: 20px;
     text-align: center;
@@ -303,6 +303,7 @@ header nav.right ul li a.btn2 {
 #instructors div.items ul li h3 { 
     font-size: 20px;
     margin-bottom: 5px;
+    color: #334155;
 }
 
 #instructors div.items ul li h5 { 
@@ -333,12 +334,12 @@ header nav.right ul li a.btn2 {
 
 #instructors div.items ul li div.bottom h4 { 
     font-size: 15px;
-    color: #394555;
+    color: #334155;
 }
 
 #testimonials {
     margin-top: 60px;
-    background-color: #f7f9fc;
+    background-color: #f8fafc;
     padding: 60px 0;
 }
 
@@ -380,7 +381,6 @@ header nav.right ul li a.btn2 {
     box-shadow: 0 0 2px 2px rgba(107, 106, 106, 0.1);
     border-radius: 15px;
     width: 30%;
-    margin-right: 15px;
     padding: 20px;
 }
 
@@ -441,9 +441,9 @@ header nav.right ul li a.btn2 {
 }
 
 #features section.content div.content_box p { 
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6em;
-    color: #1e293b;
+    color: #1d2939;
     margin-bottom: 35px;
 }
 
@@ -468,7 +468,6 @@ footer {
 
 footer section.container { 
     display: flex;
-    gap: 10%;
     align-items: center;
 }
 
@@ -511,10 +510,9 @@ footer section.container div.right div.item ul li a {
     line-height: 2;
 }
 
-footer section.container div.right div.item span.logos small { 
+footer section.container div.right div.item span.logos a small{ 
     width: 40px;
 	height: 40px;
-	background-color: #fff;
 	border-radius: 50%;
 	display: inline-block;
     margin-top: 20px;
@@ -522,23 +520,26 @@ footer section.container div.right div.item span.logos small {
     background: url(../assets/social-media.jpg);
 }
 
-footer section.container div.right div.item span.logos small:nth-child(2){
+footer section.container div.right div.item span.logos a small:nth-child(2){
     background-position: -65px;
 }
 
-footer section.container div.right div.item span.logos small:nth-child(3){
+footer section.container div.right div.item span.logos a small:nth-child(3){
     background-position: -128px;
 }
 
-footer section.container div.right div.item span.logos small:nth-child(4){
+footer section.container div.right div.item span.logos a small:nth-child(4){
     background-position: -192px;
 }
 
-footer section.container div.right div.item span.logos small:nth-child(5){
+footer section.container div.right div.item span.logos a small:nth-child(5){
     background-position: -256px;
 }
 
 @media all and (max-width: 1200px) {
+    section.container div.content p {
+        font-size: 14px;
+    }
     footer section.container div.left { 
         width: 45%;
     }
@@ -551,6 +552,12 @@ footer section.container div.right div.item span.logos small:nth-child(5){
     #spotlight section.container div.content{
         margin-top: 100px;
     }
+    #spotlight section.container div.content h2{
+        font-size: 36px;
+    }
+    #spotlight section.container div.content p {
+        font-size: 14px;
+    }
     #spotlight section.container div.img-container {
         margin: 0;
     }
@@ -560,10 +567,22 @@ footer section.container div.right div.item span.logos small:nth-child(5){
     #spotlight section.container div.content p br {
         display: none;
     }
+    #categories div.items ul li a h3 {
+        font-size: 18px;
+    }
+    #categories div.items ul li a p {
+        font-size: 14px;
+    }
+    #courses div.items ul li span.rating {
+        display: block;
+    }
     #courses div.items ul li span.rating span{
         display: block;
         margin-top: 5px;
         margin-left: 0;
+    }
+    #courses div.items ul li h3{
+        font-size: 18px;
     }
     #instructors div.items ul{
         flex-wrap: wrap;
@@ -573,12 +592,19 @@ footer section.container div.right div.item span.logos small:nth-child(5){
         margin-right: 25px;
         margin-bottom: 25px;
     }
+    #instructors div.items ul li h3 {
+        font-size: 18px;
+    }
+    #instructors div.items ul li h5{
+        font-size: 14px;
+    }
     #testimonials div.content ul{
         justify-content: center;
     }
     #testimonials div.content ul li {
-        width: 48%;
+        width: 46%;
         margin-bottom: 20px;
+        margin-right: 20px;
     }
     #features section.content div.left img{
         width: 300px;
@@ -588,9 +614,6 @@ footer section.container div.right div.item span.logos small:nth-child(5){
     }
     footer section.container div.right {
         flex-wrap: wrap;
-    }
-    footer section.container div.right div.item{
-        margin-right: 40px;
     }
 }
 
@@ -649,10 +672,14 @@ footer section.container div.right div.item span.logos small:nth-child(5){
     }
     footer section.container div.right div.item {
         margin-bottom: 20px;
+        margin-right: 40px;
     }
 }
 
 @media all and (max-width: 640px) {
+    #spotlight section.container{
+        margin-top: 0;
+    }
     #spotlight section.container div.content{
         width: 100%;
         text-align: center;
@@ -687,7 +714,7 @@ footer section.container div.right div.item span.logos small:nth-child(5){
 }
 
 @media all and (max-width: 480px) {
-    #spotlight section.container div.content h1{
+    #spotlight section.container div.content h2{
         font-size: 32px;
     }
     #spotlight section.container div.content p{
@@ -704,6 +731,11 @@ footer section.container div.right div.item span.logos small:nth-child(5){
     }
     #home section.bottom ul li:last-child{
         margin-right: 20px;
+    }
+    #categories div.items ul li a img{
+        width: 60px;
+        height: 60px;
+        padding: 0 16px;
     }
     #instructors div.items ul li{
         width: 44%;
@@ -722,6 +754,16 @@ footer section.container div.right div.item span.logos small:nth-child(5){
     #testimonials div.top span.arrow img.two{
         padding: 6px 15px;
     }
+    #features section.content div.content_box h3{
+        font-size: 22px;
+    }
+    #features section.content div.content_box p {
+        font-size: 14px;
+    }
+    footer section.container div.right div.item span.logos a small{
+        width: 38px;
+        height: 38px;
+    }
 }
 
 @media all and (max-width: 360px) {
@@ -735,7 +777,7 @@ footer section.container div.right div.item span.logos small:nth-child(5){
     #spotlight section.container div.content{
         margin-top: 50px;
     }
-    #spotlight section.container div.content h1 {
+    #spotlight section.container div.content h2 {
         font-size: 28px;
     }
     #home section.bottom ul li {
@@ -759,10 +801,13 @@ footer section.container div.right div.item span.logos small:nth-child(5){
     #instructors div.items ul li{
         width: 100%;
     } 
+    #features section.content div.right img {
+        width: 300px;
+    }
 }
 
 @media all and (max-width: 320px) {
-    #spotlight section.container div.content h1 {
+    #spotlight section.container div.content h2 {
         font-size: 25px;
     }
     #spotlight section.container div.content p{
@@ -771,17 +816,30 @@ footer section.container div.right div.item span.logos small:nth-child(5){
     #home section.bottom ul li{
         margin-left: 0;
     }
+    #instructors {
+        margin-top: 30px;
+    }
+    #testimonials{
+        margin-top: 30px;
+        padding: 30px;
+    }
+    #features{
+        margin-top: 30px;
+    }
     #features section.content div.left img{
         width: 280px;
-    }
-    #features section.content div.right img{
-        width: 300px;
     }
     #features section.content div.content_box h3{
         font-size: 22px;
     }
     #features section.content div.content_box p{
         font-size: 15px;
+    }
+    footer section.container div.right div.item h3 {
+        font-size: 18px;
+    }
+    footer section.container div.right div.item ul li a{
+        font-size: 14px;
     }
     footer section.container div.right div.item:last-child {
         margin-right: 0;
